@@ -1,0 +1,26 @@
+[package]
+name = "cc3166"
+version = "0.1.0"
+description = "Provides (current) country codes as defined in ISO 3166-1."
+authors = ["Marcus Flodin <procrustus@protonmail.com>"]
+license = "MIT OR Apache-2.0"
+edition = "2018"
+keywords = ["country", "identifier", "iso3166", "iso3166-1"]
+readme = "README.md"
+repository = "https://github.com/procrustus/cc3166-rs.git"
+include = []
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+default = ["chinese", "english", "finnish", "french", "russian", "spanish", "swedish"]
+chinese = []
+english = []
+finnish = []
+french = []
+russian = []
+spanish = []
+swedish = []
+
+[dependencies]
+paste = "1.0"
