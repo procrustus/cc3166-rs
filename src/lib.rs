@@ -128,9 +128,7 @@
 //! [4]: https://en.wikipedia.org/wiki/ISO_3166-2
 //! [5]: https://en.wikipedia.org/wiki/ISO_3166-3
 
-pub(crate) mod a2;
-pub(crate) mod a3;
-pub(crate) mod num;
+pub(crate) mod attrs;
 pub(crate) mod lang;
 #[macro_use]
 pub(crate) mod macros;

@@ -37,7 +37,7 @@ macro_rules! from_match_stmt {
 macro_rules! from_match_internal {
     ($input:ident, $suffix:ident, $($res:ident),*) => {
         match $input {
-            $($suffix::$res => { return Ok(Country::$res); }, )*
+            $(attrs::$suffix::$res => { return Ok(Country::$res); }, )*
             _ => { },
         };
 
@@ -112,7 +112,7 @@ pub(crate) mod gencd {
                 paste! {
                     #[doc = "Basic country data for `" $c:upper "`."]
                     pub const $c: &CountryData = &CountryData(
-                        a2::$c, a3::$c, num::$c
+                        attrs::a2::$c, attrs::a3::$c, attrs::num::$c
                     );
                 }
             )*
